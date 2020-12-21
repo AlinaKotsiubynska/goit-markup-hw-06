@@ -430,7 +430,7 @@
           </svg>
         </button>
         <p class="modal-call-text">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#">
+        <form class="modal-form" action="#">
           <label class="modal-form-field">
             Имя
             <input type="text" name="user-name" placeholder=" ">
@@ -443,15 +443,17 @@
             Почта
             <input type="email" name="user-email" placeholder=" ">
           </label>
-          <label class="modal-form-field">
+          <label class="modal-form-field message">
             Комментарий
-            <textarea name="user-message"></textarea>
+            <textarea class="user-message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <input type="checkbox" name="accept-conditions" value="accepted">
-          <label class="modal-accept-conditions">
-            Соглашаюсь с рассылкой и принимаю 
-            <a href="#">Условия договора</a>
-          </label>
+          <div class="checkbox-conditions">
+            <input type="checkbox" name="accept-conditions" value="accepted">
+            <label class="modal-accept-conditions">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a>
+            </label>
+          </div>
           <button class="modal-form-submit btn" type="submit">Отправить</button>
         </form>
 
