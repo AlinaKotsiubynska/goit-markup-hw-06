@@ -433,28 +433,41 @@
         <form class="modal-form" action="#">
           <label class="modal-form-field">
             Имя
-            <input type="text" name="user-name" placeholder=" ">
+            <span class="form-input-wraper">
+              <input type="text" name="user-name" placeholder=" ">
+              <svg class="icon-input">
+                <use href="/images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             Телефон
-            <input type="tel" name="user-tel" placeholder=" ">
+            <span class="form-input-wraper">
+             <input type="tel" name="user-tel" placeholder=" ">
+             <svg class="icon-input">
+               <use href="/images/sprite.svg#icon-phone-black"></use>
+             </svg>
+            </span>
           </label>
           <label class="modal-form-field" >
             Почта
-            <input type="email" name="user-email" placeholder=" ">
+            <span class="form-input-wraper">
+              <input type="email" name="user-email" placeholder=" ">
+              <svg class="icon-input">
+                <use href="/images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </span>
           </label>
-          <label class="modal-form-field message">
+          <label for="modal-form-field" class="modal-form-field message">
             Комментарий
-            <textarea class="user-message" name="user-message" placeholder="Введите текст"></textarea>
+            <textarea id="modal-form-field" class="user-message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <div class="checkbox-conditions">
-            <input type="checkbox" name="accept-conditions" value="accepted">
-            <label class="modal-accept-conditions">
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#">Условия договора</a>
-            </label>
+          <div class="modal-form-conditions">
+            <input id="form-checkbox" сlass="modal-form-checkbox" type="checkbox" name="accept-conditions" value="accepted">
+            <label for="form-checkbox" class="modal-accept-conditions">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a></label>
           </div>
-          <button class="modal-form-submit btn" type="submit">Отправить</button>
+          <button class="modal-form-submit btn" type="submit">
+            Отправить</button>
         </form>
 
       </div>
