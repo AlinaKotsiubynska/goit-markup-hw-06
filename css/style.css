@@ -972,7 +972,7 @@ nav {
   border: 2px solid var(--title-color);
   border-radius: 2px;
 
-  /* transition: translateY(-50%) var(--time-transition) var(--duration-transition); */
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .modal-accept-conditions {
@@ -994,18 +994,14 @@ nav {
 .modal-form-conditions > input:checked + .modal-accept-conditions::before {
   content: "";
   display: inline-block;
-  /* position: absolute; */
-  /* top: 50%;
-  transform: translateY(-50%); */
-  /* outline: none; */
   border-color: transparent;
-  /* overflow: visible; */
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-color: var(--acent-color);
   background-image: url(../images/original-images/icons-original/icon-check.svg);
   width: 16px;
   height: 15px;
+  /* transform: translateY(-50%); */
 }
 
 .modal-form-submit {
